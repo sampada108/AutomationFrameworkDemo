@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">224,241</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">demo.testcases.NewCustomerPageTests</td><td><a href="#m0">validateNewCutomerCreationTest</a></td><td rowspan="2">1644844027066</td><td rowspan="2">22968</td></tr><tr class="failedeven"><td><a href="#m1">validateNewCutomerCreationTest</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">demo.testcases.LoginPageTests</td><td><a href="#m2">loginPageTitleTest</a></td><td rowspan="1">1644843881746</td><td rowspan="1">18</td></tr><tr class="passedeven"><td><a href="#m3">loginWithInvalidData</a></td><td rowspan="3">1644843927178</td><td rowspan="3">1315</td></tr><tr class="passedeven"><td><a href="#m4">loginWithInvalidData</a></td></tr><tr class="passedeven"><td><a href="#m5">loginWithInvalidData</a></td></tr><tr class="passedeven"><td><a href="#m6">loginWithValidData</a></td><td rowspan="1">1644843938524</td><td rowspan="1">2812</td></tr><tr class="passedodd"><td rowspan="4">demo.testcases.ManagerPageTests</td><td><a href="#m7">ManagerPageTitleTest</a></td><td rowspan="1">1644843952696</td><td rowspan="1">11</td></tr><tr class="passedodd"><td><a href="#m8">verifyAllLinksTest</a></td><td rowspan="1">1644843976114</td><td rowspan="1">697</td></tr><tr class="passedodd"><td><a href="#m9">verifyManagerIdTest</a></td><td rowspan="1">1644843964035</td><td rowspan="1">371</td></tr><tr class="passedodd"><td><a href="#m10">verifynewCustomerlinkTest</a></td><td rowspan="1">1644843990518</td><td rowspan="1">4364</td></tr><tr class="passedeven"><td rowspan="1">demo.testcases.NewCustomerPageTests</td><td><a href="#m11">NewCustomerPageTitleTest</a></td><td rowspan="1">1644844008745</td><td rowspan="1">3365</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">demo.testcases.NewCustomerPageTests#validateNewCutomerCreationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Smita K</td><td>female</td><td>28-02-1988</td><td>Pune</td><td>Pune</td><td>Maharashatra</td><td>4110030.0</td><td>9745455634</td><td>smitak@guru99.com</td><td>smita</td></tr><tr><th colspan="10">Exception</th></tr><tr><td colspan="10"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//P[@class=&apos;heading3&apos; and contains(text(), &apos;Customer Registered Successfully!!!&apos;)]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.80&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a3519135d48e1cc12fde383e1b48859, findElement {using=xpath, value=//P[@class=&apos;heading3&apos; and contains(text(), &apos;Customer Registered Successfully!!!&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63502/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3519135d48e1cc12fde383e1b48859
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at demo.pages.AddNewCustomerPage.submitForm(AddNewCustomerPage.java:120)
+	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">demo.testcases.NewCustomerPageTests#validateNewCutomerCreationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Sharad A</td><td>male</td><td>02-Nov-1967</td><td>Nashik</td><td>Nashik</td><td>Maharashatra</td><td>4110030.0</td><td>9745455635</td><td>sharadA@guru99.com</td><td>sharad</td></tr><tr><th colspan="10">Exception</th></tr><tr><td colspan="10"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//P[@class=&apos;heading3&apos; and contains(text(), &apos;Customer Registered Successfully!!!&apos;)]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.80&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4979078b34cf3438f4a165633cbfbb74, findElement {using=xpath, value=//P[@class=&apos;heading3&apos; and contains(text(), &apos;Customer Registered Successfully!!!&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4979078b34cf3438f4a165633cbfbb74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at demo.pages.AddNewCustomerPage.submitForm(AddNewCustomerPage.java:120)
+	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">demo.testcases.LoginPageTests#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">demo.testcases.LoginPageTests#loginWithInvalidData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>mngr381679</td><td>Invalid</td><td>User or Password is not valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">demo.testcases.LoginPageTests#loginWithInvalidData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>InvalidUN</td><td>InvalidPW</td><td>User or Password is not valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">demo.testcases.LoginPageTests#loginWithInvalidData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Invalid</td><td>Guru@99</td><td>User or Password is not valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">demo.testcases.LoginPageTests#loginWithValidData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">demo.testcases.ManagerPageTests#ManagerPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">demo.testcases.ManagerPageTests#verifyAllLinksTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">demo.testcases.ManagerPageTests#verifyManagerIdTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">demo.testcases.ManagerPageTests#verifynewCustomerlinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">demo.testcases.NewCustomerPageTests#NewCustomerPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

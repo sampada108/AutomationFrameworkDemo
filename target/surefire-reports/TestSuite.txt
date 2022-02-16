@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 225.387 s <<< FAILURE! - in TestSuite
+validateNewCutomerCreationTest(demo.testcases.NewCustomerPageTests)  Time elapsed: 22.99 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'HP', ip: '192.168.0.80', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a3519135d48e1cc12fde383e1b48859, findElement {using=xpath, value=//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63502/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3519135d48e1cc12fde383e1b48859
+	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+
+validateNewCutomerCreationTest(demo.testcases.NewCustomerPageTests)  Time elapsed: 25.958 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'HP', ip: '192.168.0.80', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4979078b34cf3438f4a165633cbfbb74, findElement {using=xpath, value=//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4979078b34cf3438f4a165633cbfbb74
+	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+
