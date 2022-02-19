@@ -1,30 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 225.387 s <<< FAILURE! - in TestSuite
-validateNewCutomerCreationTest(demo.testcases.NewCustomerPageTests)  Time elapsed: 22.99 s  <<< FAILURE!
+Tests run: 15, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 213.86 s <<< FAILURE! - in TestSuite
+validateNewCutomerCreationTest(demo.testcases.NewCustomerPageTests)  Time elapsed: 20.939 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]"}
-  (Session info: chrome=98.0.4758.82)
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='name']"}
+  (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'HP', ip: '192.168.0.80', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+System info: host: 'HP', ip: '192.168.0.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a3519135d48e1cc12fde383e1b48859, findElement {using=xpath, value=//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63502/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a3519135d48e1cc12fde383e1b48859
-	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+Command: [d96c1b8e6d111e3cfc914d2ae89c1a9e, findElement {using=xpath, value=//input[@name='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58700/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d96c1b8e6d111e3cfc914d2ae89c1a9e
+	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:52)
 
-validateNewCutomerCreationTest(demo.testcases.NewCustomerPageTests)  Time elapsed: 25.958 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]"}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+teardown(demo.testcases.NewCustomerPageTests)  Time elapsed: 22.494 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="Logout.php">...</a> is not clickable at point (120, 594). Other element would receive the click: <iframe frameborder="0" src="https://09965765b8967ee6038985e0701db1ee.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="" height="" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px !important; vertical-align: bottom !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; visibility: visible !important; z-index: auto !important;" data-load-complete="true"></iframe>
+  (Session info: chrome=98.0.4758.102)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'HP', ip: '192.168.0.80', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+System info: host: 'HP', ip: '192.168.0.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4979078b34cf3438f4a165633cbfbb74, findElement {using=xpath, value=//P[@class='heading3' and contains(text(), 'Customer Registered Successfully!!!')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4979078b34cf3438f4a165633cbfbb74
-	at demo.testcases.NewCustomerPageTests.validateNewCutomerCreationTest(NewCustomerPageTests.java:47)
+Command: [d96c1b8e6d111e3cfc914d2ae89c1a9e, clickElement {id=e7f1aa31-6215-41d5-9dfb-4e28e134d4ff}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp-pc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58700/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d96c1b8e6d111e3cfc914d2ae89c1a9e)] -> xpath: //a[contains(text(), 'Log out')]]
+Session ID: d96c1b8e6d111e3cfc914d2ae89c1a9e
+	at demo.testcases.NewCustomerPageTests.teardown(NewCustomerPageTests.java:83)
 

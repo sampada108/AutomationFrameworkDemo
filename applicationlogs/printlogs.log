@@ -1,0 +1,53 @@
+18:47:57.940 [main] INFO  demo.testcases.NewCustomerPageTests - Clicking on Logout link
+18:47:57.959 [main] INFO  demo.testcases.NewCustomerPageTests - Logout from application.
+18:47:58.715 [main] INFO  demo.testcases.NewCustomerPageTests - Closing all browsers
+19:11:12.789 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:11:12.794 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:11:13.033 [main] INFO  demo.testcases.LoginPageTests - Validated login page title.
+19:11:13.969 [main] INFO  demo.testcases.LoginPageTests - Closed all browsers.
+19:11:26.475 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:11:26.476 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:11:27.879 [main] INFO  demo.testcases.LoginPageTests - Validated login with invalid user name or password
+19:11:28.736 [main] INFO  demo.testcases.LoginPageTests - Closed all browsers.
+19:11:37.296 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:11:37.298 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:11:38.332 [main] INFO  demo.testcases.LoginPageTests - Validated login with invalid user name or password
+19:11:39.134 [main] INFO  demo.testcases.LoginPageTests - Closed all browsers.
+19:11:48.884 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:11:48.885 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:11:49.940 [main] INFO  demo.testcases.LoginPageTests - Validated login with invalid user name or password
+19:11:50.815 [main] INFO  demo.testcases.LoginPageTests - Closed all browsers.
+19:12:00.316 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:12:00.316 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:12:02.449 [main] INFO  demo.testcases.LoginPageTests - Login in application
+19:12:02.463 [main] INFO  demo.testcases.LoginPageTests - Validated Manager page title.
+19:12:03.460 [main] INFO  demo.testcases.LoginPageTests - Logout from application
+19:12:08.703 [main] INFO  demo.testcases.LoginPageTests - Closed all browsers.
+19:12:18.306 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:12:18.306 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:12:20.160 [main] INFO  demo.testcases.ManagerPageTests - Validated Manager page title
+19:12:20.885 [main] INFO  demo.testcases.ManagerPageTests - Clicking on Logout link
+19:12:20.912 [main] INFO  demo.testcases.ManagerPageTests - Logout from application.
+19:12:21.673 [main] INFO  demo.testcases.ManagerPageTests - Closing all browsers
+19:12:30.090 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:12:30.090 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:12:32.338 [main] INFO  demo.testcases.ManagerPageTests - Verified Manager ID with the userIDManger Id : mngr385648
+19:12:32.340 [main] INFO  demo.testcases.ManagerPageTests - Screenshot taken after verification of Manager ID.
+19:12:33.336 [main] INFO  demo.testcases.ManagerPageTests - Clicking on Logout link
+19:12:33.355 [main] INFO  demo.testcases.ManagerPageTests - Logout from application.
+19:12:34.390 [main] INFO  demo.testcases.ManagerPageTests - Closing all browsers
+19:12:44.034 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:12:44.035 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:12:46.720 [main] INFO  demo.testcases.ManagerPageTests - Verified al links present on Manager home page.
+19:12:47.467 [main] INFO  demo.testcases.ManagerPageTests - Clicking on Logout link
+19:12:47.521 [main] INFO  demo.testcases.ManagerPageTests - Logout from application.
+19:12:48.312 [main] INFO  demo.testcases.ManagerPageTests - Closing all browsers
+19:12:56.909 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:12:56.910 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/
+19:13:00.900 [main] INFO  demo.testcases.ManagerPageTests - Clicking on New Cutomer link
+19:13:01.684 [main] INFO  demo.testcases.ManagerPageTests - Validated Add New Cutomer page title
+19:13:02.690 [main] INFO  demo.testcases.ManagerPageTests - Clicking on Logout link
+19:13:02.732 [main] INFO  demo.testcases.ManagerPageTests - Logout from application.
+19:13:03.577 [main] INFO  demo.testcases.ManagerPageTests - Closing all browsers
+19:13:12.518 [main] INFO  demo.base.TestBase - Initialized driver for chrome
+19:13:12.518 [main] INFO  demo.base.TestBase - Navigated to URL.http://www.demo.guru99.com/V4/

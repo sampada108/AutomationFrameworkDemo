@@ -1,6 +1,7 @@
 demo\pages\LogoutPage.class
-demo\pages\ManagerPage.class
-demo\util\TestUtil.class
 demo\base\TestBase.class
 demo\pages\LoginPage.class
 demo\pages\AddNewCustomerPage.class
+demo\util\TestUtil.class
+demo\pages\ManagerPage.class
+demo\pages\DeleteCustomerPage.class

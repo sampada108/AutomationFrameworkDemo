@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="validateNewCutomerCreationTest" invocation-numbers="0 1"/>
+          <include name="validateNewCutomerCreationTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- demo.testcases.NewCustomerPageTests -->
     </classes>

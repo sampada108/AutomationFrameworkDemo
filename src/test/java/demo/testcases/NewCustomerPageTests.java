@@ -1,5 +1,7 @@
 package demo.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +18,7 @@ import demo.util.TestUtil;
 
 public class NewCustomerPageTests extends TestBase {
 
+	public static final Logger log = LogManager.getLogger(NewCustomerPageTests.class.getName());
 	LoginPage loginpage;
 	ManagerPage managerpage;
 	AddNewCustomerPage newcustomerpage;
@@ -39,6 +42,7 @@ public class NewCustomerPageTests extends TestBase {
 	public void NewCustomerPageTitleTest() {
 		String title = newcustomerpage.validateTitle();
 		Assert.assertEquals(title, "Guru99 Bank New Customer Entry Page");
+		log.info("Validated Add New Cutomer page title");
 	}
 
 	@Test(priority = 2, dataProvider = "getNewCutomerData")
@@ -46,23 +50,27 @@ public class NewCustomerPageTests extends TestBase {
 			String city, String state, String pin, String mobileNo, String emailid, String password) {
 
 		newcustomerpage.AddNewCustomer(name, gender, birthDate, address, city, state, pin, mobileNo, emailid, password);
-
+		log.info("Entered values for all fields in the New Cutomer page.");
+		
 		boolean bflag = newcustomerpage.submitForm();
+		log.info("Submitted form fille dwith values.");
 
 		Assert.assertTrue(bflag);
-		System.out.println("New customer created.");
-		
 		
 		String custid = newcustomerpage.getCustomerID();
-		System.out.println("New customer created with ID " + custid);
+		log.info("New customer created with ID " + custid);
 		
 		//Delete customer
 		newcustomerpage.clickLinkHome();
+		log.info("Clicking on Home link.");
 		
 		//managerpage.clickNewCustomerLink();
 		deletecustomerpage = managerpage.clickDeleteCustomerLink();
+		log.info("Click on Delete Customer Link.");
 		deletecustomerpage.validateDeleteCustomer(custid);
+		log.info("Customer with ID " + custid + "is Deleted.");
 		newcustomerpage.clickLinkHome();
+		log.info("Clicking on Home link.");
 	}
 
 	@DataProvider
@@ -73,8 +81,10 @@ public class NewCustomerPageTests extends TestBase {
 	@AfterMethod
 	public void teardown() {
 		logoutpage = managerpage.clickLogoutLink();
+		log.info("Clicking on Logout link");
 		logoutpage.Logout();
+		log.info("Logout from application.");
 		driver.quit();
-		System.out.println("Logout from application.");
+		log.info("Closing all browsers");
 	}
 }

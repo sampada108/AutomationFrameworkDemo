@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,12 +13,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBase {
 
+	public static final Logger log = LogManager.getLogger(TestBase.class.getName());
 	public static WebDriver driver;
 	public static Properties prop;
 	public static String filePathUserDir = System.getProperty("user.dir");
+	public static WebDriverWait wait ;
 	static long pageLoadTimeout = 40;
 	static long implicitWaitTimeout = 20;
-	public static WebDriverWait wait ;
 
 	public TestBase() {
 		try {
@@ -51,6 +54,8 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTimeout));
 		
 		driver.get(prop.getProperty("url"));
+		log.info("Initialized driver for " + browserName);
+		log.info("Navigated to URL." + prop.getProperty("url"));
 	}
 
 }
